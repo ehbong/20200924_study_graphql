@@ -1,0 +1,42 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "graphqlStudy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehbong/20200924_study_graphql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehbong/20200924_study_graphql/issues"
+  },
+  "homepage": "https://github.com/ehbong/20200924_study_graphql#readme",
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "author": "Taewook Kim",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "flatted": "^3.0.4",
+    "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "saslprep": "^1.0.3",
+    "supports-color": "^7.2.0",
+    "xlsx": "^0.16.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
